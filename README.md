@@ -44,10 +44,10 @@ Whereas valid language file will look like this
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <contents>
-    <0>This is title of the page</0>
-    <1>This is heading of the page</1>
-    <2>This is first paragraph</2>
-    <3>This is second paragraph</3>
+    <id0>This is title of the page</id0>
+    <id1>This is heading of the page</id1>
+    <id2>This is first paragraph</id2>
+    <id3>This is second paragraph</id3>
 </contents>
 ```
 
@@ -75,7 +75,7 @@ Directory tree after running:
 ### Usage
 
 Place your HTML file and XML language files inside website directory. Directory website should be in the same directory as index.js, otherwise detection won't be successful.
-First HTML file deteceted will be used as srouce file - it is not intended to work on multiple HTML files.
+First HTML file deteceted will be used as source file - it is not intended to work on multiple HTML files.
 All XML files will be registered as language files and name of each one will be used to create directory in which it's translation will be joined with HTML source file.
 
 ```bash
